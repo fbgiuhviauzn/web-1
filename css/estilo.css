@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 header{
     height: 90vh;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(img/fondo.jpg);
     border-radius: 7px;
     background-repeat: no-repeat;
     background-size: cover;
