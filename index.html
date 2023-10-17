@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>web-Deiner :D</title>
+</head>
+
+<body class="body"">
+   
+    <header class="header" id="inicio" >
+        <div class="menu" onclick="visible_nav()"><i class='bx bx-menu-alt-right'></i></div>
+        <nav class="menu-navegacion">
+            <div id="close-menu" onclick="visible_nav()">
+                <i class='bx bx-x'  ></i>
+            </div>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#experto">Experto</a>
+            <a href="#contatanos">contatanos</a>
+            <div class="swich">
+                <div class="select-tem"></div>
+                <i class='bx bxs-sun' id="sol"></i>
+                <i class='bx bxs-moon'id="luna"' ></i>
+            </div>
+         </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Convertimos tus sueños en realidad</h1>
+            <p class="copy">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, et?
+            </p>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">nuestro servicio</h2>
+
+            <div class="contenedor-servicio">
+                <img src="img/Checklist.svg" alt="">
+
+                <div class="checklist-servicio">
+                    <div class="service color">
+                        <h3 class="n-service">
+                            <span class="number">
+                                1
+                            </span>
+                            Diseño web
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel a dolorem, animi eum
+                                consectetur quae perferendis. Excepturi, atque sit.
+                            </p>
+                        </h3>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service">
+                            <span class="number">
+                                2
+                            </span>
+                            Diseño web
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel a dolorem, animi eum
+                                consectetur quae perferendis. Excepturi, atque sit.
+                            </p>
+
+                        </h3>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service">
+                            <span class="number">
+                                3
+                            </span>
+                            Diseño web
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel a dolorem, animi eum
+                                consectetur quae perferendis. Excepturi, atque sit.
+                            </p>
+                        </h3>
+                    </div>
+                </div>
+        </section>
+        <section class="galery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">
+                    Galeria
+                </h2>
+                <div class="line"></div>
+                <div class="contenedor-galeria">
+                   <div class="row">
+                        <div class="column">
+                            <img src="img/img1.jpg" onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img2.jpg" onclick="openFulImg(this.src)" id="fulimg"  alt="">
+                            <img src="img/img3.jpg" onclick="openFulImg(this.src)" id="fulimg"  alt="">
+                            <img src="img/img4.jpg" onclick="openFulImg(this.src)" id="fulimg"  alt="">
+                        </div>
+                        <div class="column">
+                            <img src="img/img5.jpg" onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img6.jpg"  onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img7.jpg"  onclick="openFulImg(this.src)" alt="">
+                            <img src="/img/img8.jpg"  onclick="openFulImg(this.src)" alt="">
+                        </div>
+                        <div class="column">
+                            <img src="img/img9.jpg"  onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img10.jpg"  onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img11.jpg"  onclick="openFulImg(this.src)" alt="">
+                            <img src="img/img12.jpg"  onclick="openFulImg(this.src)" alt="">
+
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagen-ligh" id="n-img">
+            <img onclick="closeOpenImg()" class="close" src="/img/close.svg" alt="">
+            <img src="/img/img1.jpg" class="navegar-imagen" id="p-img" alt="">
+        </section>
+
+        <section class="contenedor" id="experto">
+            <h2 class="subtitulo">experto en:</h2>
+
+            <section class="experts">
+                <div class="count-expert">
+                    <img  src="/img/Pie_Chart.svg" alt="">
+                    <h3 class="n-expert">analytics</h3>
+                </div>
+                <div class="count-expert">
+                    <img  src="/img/Search_Engine.svg" alt="">
+                    <h3 class="n-expert">CIO</h3>
+                </div>
+                <div class="count-expert">
+                    <img  src="/img/Security.svg" alt="">
+                    <h3 class="n-expert">SECURITY</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="contatanos">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">DEINER ESTIVEN</h2>
+                <span class="brandp">
+                    Somos expertos en la creacion de tus sueños
+                </span>
+            </div>
+            <div class="social-media">
+                <a href="" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-facebook' ></i>
+                </a>
+                <a href="" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+                <a href="" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/navegacion_img.js"></script>
+</body>
+
+</html>
